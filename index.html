@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <script src="countries.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="whole-page">
+        <div class="header">
+            <div class="country-container">
+                <h1>WORLD COUNTRIES LIST</h1>
+                <div class="countriesN-info">
+                    <h3 id="countries-number">Total number of countries:</h3>
+                    
+                </div>
+                <p class="feed"></p>
+                <div class="Btn-div">
+                    <button class="BTN" id="StartingW" data-type="start" data-active="false">Starting Word</button>
+                    <button class="BTN" id="ContainsW" data-type="contain" data-active="false">Search with any word</button>
+                    <button class="BTN" id="directionB" data-direction="ZA">
+                        <i class="fa-solid fa-arrow-down-a-z"></i>
+                    </button>
+                </div>
+                <div class="inputDiv">
+                    <input type="search" placeholder="Search Country"  id="search-Country" data-search="starts">
+                    <span class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="countries-cards">
+
+        </div>
+    </div>
+    <template data-country-template>
+        <div class="card">
+            <h3 class="countryN"></h3>
+        </div>
+    </template>
+</body>
+
+</html>

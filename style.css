@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --standartSize : 150px;
+}
+p{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    background-image: url(images/globe-2.jpg);
+    background-size: cover;
+    min-height: 60vh;
+}
+
+.country-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 750%;
+}
+
+.country-container>h1{
+    margin-top: 150px;
+    font-size: 3rem;
+    letter-spacing: 10px;
+}
+.countriesN-info{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Btn-div>button.Btn-active {
+    background-color: rgba(29, 73, 56, 1);
+}
+.Btn-div>button{
+    padding:1rem 2rem;
+    margin: 1.25rem 0.75rem;
+    background-color: rgba(49, 125, 96,0.75);
+    color:black;
+    border-radius: 0.45rem;
+    font-size: 1rem;
+    font-weight: 800;
+    transition: transform 250ms 150ms;
+}
+.Btn-div>button:hover,.Btn-div>button:focus-visible{
+    color:rgba(49, 125, 96,0.75);
+    background-color: black;
+    transform: translateY(-0.75rem);
+    transition: transform 250ms 150ms;
+}
+
+.inputDiv{
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    gap:0.25rem
+}
+.inputDiv>input{
+    width: 100%;
+border-radius: 0.5rem;
+padding: 0.75rem 0rem;
+text-align: center;
+}
+.countries-cards{
+    margin: 100px 50px;
+    display: grid;
+    grid-template-columns:repeat(6, minmax(0, 1fr));
+    gap: 20px;
+    place-items: center;
+}
+.card{
+    height: var(--standartSize);
+    width: var(--standartSize);
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background:rgba(107, 117, 108, 0.75) url(images/map_image.jpg);
+}
+.hide{
+    display:none
+}
